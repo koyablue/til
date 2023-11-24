@@ -13,3 +13,9 @@ and
 core.ignorecase=true
 ```
 it means git ignores case changes.
+And if
+```
+core.ignorecase=false
+```
+it means git detects case changes.
+
