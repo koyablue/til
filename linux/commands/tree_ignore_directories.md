@@ -1,4 +1,4 @@
-# tree: ignore directories with patterns
+# Tree: Ignore Directories with Patterns
 
 https://zaiste.net/posts/tree-ignore-directories-patterns/
 

@@ -1,3 +1,5 @@
+# Detect File Name Case Changes
+
 Do this.
 ```
 $ git config core.ignorecase false

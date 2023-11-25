@@ -1,3 +1,5 @@
+# Why You Should Avoid Using Index Of Array For Key Prop
+
 https://zenn.dev/luvmini511/articles/f7b22d93e9c182
 
 React compares elements by their key props. For example, if there are items A (key='a'), B (key='b'), C (key='c'), and a new element D (key='d') is going to be added, React will compare the current set of items with the new set using keys. In this case, keys a, b, and c will stay the same, and only the item with key='d' will be added. This means that React doesn't need to re-render the first three items; only the new item needs to be rendered.
