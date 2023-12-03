@@ -17,11 +17,11 @@ const groupAnagrams = (strs) => {
   // {'1#0#0#...': ['abc', 'bca'...],}
   const anagrams = {};
 
-  for (str of strs) {
+  for (let str of strs) {
     // Alphabet has 26 characters so create a 26 length empty array
-    const countList = Array(26).fill();
+    const countList = Array(26).fill(0);
 
-    for (char of str) {
+    for (let char of str) {
       // char.charCodeAt(0) - 'a'.charCodeAt(0) determine the place of character
       countList[char.charCodeAt(0) - 'a'.charCodeAt(0)]++;
     }
