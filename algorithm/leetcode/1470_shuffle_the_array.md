@@ -1,4 +1,4 @@
-# Leet Code 53 Maximum Subarray
+# Leet Code 1470 Shuffle the Array
 
 https://leetcode.com/problems/shuffle-the-array/description/
 
