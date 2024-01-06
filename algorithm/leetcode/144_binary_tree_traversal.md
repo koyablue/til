@@ -2,6 +2,11 @@
 https://leetcode.com/problems/binary-tree-preorder-traversal/description/
 # References
 https://www.youtube.com/watch?v=afTpieEZXck
+
+- Preorder traversal is label -> left -> right
+- Types of traversal
+https://qiita.com/uniTM/items/324883808a62c6938ac0
+
 # Solution
 
 ```javascript
