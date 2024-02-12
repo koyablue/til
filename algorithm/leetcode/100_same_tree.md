@@ -1,4 +1,4 @@
-# Leet Code 543 Diameter of Binary Tree
+# Leet Code 100 Same Tree
 https://leetcode.com/problems/same-tree/description/
 # References
 
