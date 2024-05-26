@@ -1,0 +1,54 @@
+/* <div class="container">
+  <header class="header"></header>
+  <div class="side-nav"></div>
+  <main class="main"></main>
+  <div class="ads"></div>
+  <div class="sub-contents"></div>
+  <footer class="footer"></footer>
+</div> */
+
+body {
+  margin: 0;
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 60px 160px 1fr 100px;
+  grid-template-columns: 120px 1fr 100px;
+}
+
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+  background-color: chocolate;
+}
+
+.side-nav {
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+  background-color: blue;
+}
+
+.main {
+  grid-row: 2 / 4;
+  grid-column: 2 / 3;
+  background-color: blueviolet;
+}
+
+.ads {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  background-color: gray;
+}
+
+.sub-contents {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+  background-color: pink;
+}
+
+.footer {
+  grid-row: 4 / 5;
+  grid-column: 1 / 4;
+  background-color: chartreuse;
+}
