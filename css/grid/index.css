@@ -21,3 +21,33 @@
   grid-row: 2 / 3;
   grid-column: 2 / 3;
 }
+
+#container2 {
+  display: grid;
+  grid-template-rows: 150px 150px;
+  grid-template-columns: 200px 200px;
+}
+
+#top-left {
+  background-color: aqua;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+#top-right {
+  background-color: #f88;
+  grid-row: 1 / 2;
+  grid-column: 2 /3;
+}
+
+#bottom-left {
+  background-color: #8f8;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+#bottom-right {
+  background-color: red;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
