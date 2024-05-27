@@ -1,8 +1,11 @@
 # Leet Code 1365 How Many Numbers Are Smaller Than The Current Number
 
 https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/
+
 # References
+
 https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/solutions/2837597/faster-than-100-simple-javascript-hashmap-solution/
+
 # Solution
 
 ```javascript
@@ -10,11 +13,12 @@ https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-numb
  * @param {number[]} nums
  * @return {number[]}
  */
-const smallerNumbersThanCurrent = function(nums) {
+const smallerNumbersThanCurrent = function (nums) {
   // nums = [8,1,2,2,3]
 
   // Use slice() to avoid modifying the original array
   // sorted = [1, 2, 2, 3, 8]
+  // Note:  [...arr].sort((a, b) => a - b); might be better
   const sorted = nums.slice().sort((a, b) => a - b);
 
   // {val: idx} of sorted
@@ -32,6 +36,6 @@ const smallerNumbersThanCurrent = function(nums) {
 
   // Return new array
   // map is { valOfNums: countOfSmallerNumber } so just return map[n]
-  return nums.map(n => map[n]);
+  return nums.map((n) => map[n]);
 };
 ```
