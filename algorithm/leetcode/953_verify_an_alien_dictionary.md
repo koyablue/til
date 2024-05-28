@@ -1,8 +1,11 @@
 # Leet Code 953 Verifying an Alien Dictionary
 
 https://leetcode.com/problems/verifying-an-alien-dictionary/description/
+
 # References
+
 https://www.youtube.com/watch?v=OVgPAJIyX6o
+
 # Solution
 
 ```javascript
@@ -11,12 +14,17 @@ https://www.youtube.com/watch?v=OVgPAJIyX6o
  * @param {string} order
  * @return {boolean}
  */
-const isAlienSorted = function(words, order) {
+const isAlienSorted = function (words, order) {
   const orderCharIdx = {};
   for (let i = 0; i < order.length; i++) {
     orderCharIdx[order[i]] = i;
   }
 
+  // words.length - 1
+  // it uses 2 pointers and compare adjacent elements
+  // if the condition is i < words.length, w2 would be undefined at some point
+  // because words[i + 1] might not be in the array
+  // that's why -1 is necessary
   for (let i = 0; i < words.length - 1; i++) {
     let w1 = words[i];
     let w2 = words[i + 1];
@@ -30,6 +38,6 @@ const isAlienSorted = function(words, order) {
     }
   }
 
-  return true
+  return true;
 };
 ```
